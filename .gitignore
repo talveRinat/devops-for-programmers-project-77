@@ -1,0 +1,21 @@
+# Terraform files
+terraform/.terraform/          # Директория с файлами провайдера
+terraform/.terraform.lock.hcl  # Блокировка провайдеров
+terraform/terraform.tfstate    # Локальный стейт
+terraform/terraform.tfstate.*  # Любые файлы бэкапов стейта
+*.tfvars                       # Файлы с переменными (могут содержать секреты)
+
+# Ansible files
+ansible/secrets.yml            # Зашифрованный файл с секретами
+ansible/vault_pass.txt         # Файл с паролем для Ansible Vault
+
+# Общие файлы
+*.log                          # Лог-файлы
+*.bak                          # Резервные копии
+*.swp                          # Файлы временных сохранений редакторов
+*.tmp                          # Временные файлы
+.DS_Store                      # macOS системные файлы
+
+# UV files
+.venv
+uv.lock
